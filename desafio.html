@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCRIPTADOR</title>
+    <link rel="stylesheet" href="diseño.css">
+    <script src="./desafio.js"></script>
+    
+</head>
+
+
+
+<body>
+    
+    <div class="flex-container">
+            <div class="logo">
+                <img src= "ALURA.png" width="120px" height="48px"> 
+            </div>
+             <textarea
+             name="texto"
+             class="texto"
+             id="texto"
+             cols="30"
+             rows="10"
+             placeholder="INGRESE TEXTO"
+             ></textarea>
+             <div class="alerta">
+                <p>"solo letras y sin acentos"</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="botones">
+        <button class="btn-encriptar" type="button" onclick="encriptar()">
+            ENCRIPTAR
+        </button>
+        &nbsp;
+        <input type="button" class="btn-desencriptar" value="DESENCRIPTAR" onclick="desencriptar()"/>
+    </div>
+
+    <div class="container" >
+        <div id="container-mensaje" style="visibility: hidden;"     >
+            <textarea name="mensaje" id="mensaje" cols="30" rows="20" class="mensaje"> </textarea> 
+            <button class="button-copiar" type="button" onclick="copiarAlPortapapeles()">
+                COPIAR
+            </button>
+
+        </div>
+        <div class="mensaje-encriptado" id="mensaje-encriptado" style="visibility: visible;">
+            <img src= "imagentexto.jpg" id="muneco" width="336px" height="304px" > 
+            <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+            <p>ingrese el texto que desea encriptar o desencriptar</p>
+        </div>
+
+     </div>
+
+
+</body>
+</html>
